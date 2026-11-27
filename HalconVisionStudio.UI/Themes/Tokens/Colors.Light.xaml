@@ -1,0 +1,113 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Panels and Background -->
+    <SolidColorBrush x:Key="Theme.Vision.Window.Background" Color="#E4EDF9" />
+    <SolidColorBrush x:Key="Theme.Vision.Panel.Background" Color="#DFFFFFFF" />
+    <SolidColorBrush x:Key="Theme.Vision.Panel.HeaderBackground" Color="#70F3F8FF" />
+    <SolidColorBrush x:Key="Theme.Vision.Panel.SubtleBackground" Color="#80EAF2FC" />
+    <SolidColorBrush x:Key="Theme.Vision.ActionBar.Background" Color="#F1F5F9" />
+    <SolidColorBrush x:Key="Theme.Vision.Viewport.Background" Color="#111B2E" />
+
+    <!-- Borders and Lines -->
+    <SolidColorBrush x:Key="Theme.Vision.Border" Color="#6089A8CD" />
+    <SolidColorBrush x:Key="Theme.Vision.Border.Subtle" Color="#F1F5F9" />
+    <SolidColorBrush x:Key="Theme.Vision.Border.Focus" Color="#3B82F6" />
+
+    <!-- Text Colors -->
+    <SolidColorBrush x:Key="Theme.Vision.Text.Primary" Color="#233854" />
+    <SolidColorBrush x:Key="Theme.Vision.Text.Secondary" Color="#536A87" />
+    <SolidColorBrush x:Key="Theme.Vision.Text.Muted" Color="#657D99" />
+    <SolidColorBrush x:Key="Theme.Vision.Text.Inverse" Color="#FFFFFF" />
+
+    <!-- Status Colors -->
+    <SolidColorBrush x:Key="Theme.Vision.Status.Success" Color="#16A34A" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Success.Background" Color="#DCFCE7" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Success.Border" Color="#BBF7D0" />
+
+    <SolidColorBrush x:Key="Theme.Vision.Status.Failed" Color="#DC2626" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Failed.Background" Color="#FEE2E2" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Failed.Border" Color="#FECACA" />
+
+    <SolidColorBrush x:Key="Theme.Vision.Status.Running" Color="#0284C7" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Running.Background" Color="#E0F2FE" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Running.Border" Color="#BAE6FD" />
+
+    <SolidColorBrush x:Key="Theme.Vision.Status.Warning" Color="#D97706" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Warning.Background" Color="#FEF3C7" />
+    <SolidColorBrush x:Key="Theme.Vision.Status.Warning.Border" Color="#FDE68A" />
+
+    <!-- Canvas and Connection -->
+    <SolidColorBrush x:Key="Theme.Vision.Canvas.Background" Color="#BCEAF1FC" />
+    <SolidColorBrush x:Key="Theme.Vision.Canvas.GridDot" Color="#68728EB5" />
+    <SolidColorBrush x:Key="Theme.Vision.Connection.Line" Color="#94A3B8" />
+    <SolidColorBrush x:Key="Theme.Vision.Connection.Selected" Color="#3B82F6" />
+
+    <!-- Overlay -->
+    <SolidColorBrush x:Key="Theme.Vision.Overlay.Background" Color="#800F172A" />
+
+    <!-- AI Copilot & Modern Semantic Tokens -->
+    <SolidColorBrush x:Key="Token.Primary" Color="#2563EB" />
+    <SolidColorBrush x:Key="Token.Surface.Background" Color="#E4EDF9" />
+    <SolidColorBrush x:Key="Token.Surface.Card" Color="#EFFFFFFF" />
+    <SolidColorBrush x:Key="Token.Surface.Muted" Color="#A6ECF4FF" />
+    <SolidColorBrush x:Key="Token.Border.Subtle" Color="#6089A8CD" />
+    <SolidColorBrush x:Key="Token.Text.Primary" Color="#233854" />
+    <SolidColorBrush x:Key="Token.Text.Secondary" Color="#536A87" />
+    <SolidColorBrush x:Key="Token.Text.Muted" Color="#657D99" />
+    <SolidColorBrush x:Key="Token.Status.Danger" Color="#EF4444" />
+    <SolidColorBrush x:Key="Token.Status.Danger.Border" Color="#FECACA" />
+    <SolidColorBrush x:Key="Token.Status.Danger.Background" Color="#FEE2E2" />
+
+
+    <!-- 玻璃主题：每次明暗切换由同一套语义资源驱动。 -->
+    <SolidColorBrush x:Key="Glass.Edge" Color="#91768CAF" />
+    <SolidColorBrush x:Key="Glass.Highlight" Color="#F3FFFFFF" />
+    <SolidColorBrush x:Key="Glass.Focus" Color="#245DBC" />
+    <SolidColorBrush x:Key="Glass.Hover" Color="#F2E9F3FF" />
+    <SolidColorBrush x:Key="Glass.Pressed" Color="#F5D6E8FD" />
+    <SolidColorBrush x:Key="Glass.Input" Color="#BFF1F6FF" />
+    <SolidColorBrush x:Key="Glass.Popup" Color="#FCF6F9FF" />
+    <Color x:Key="Glass.BackdropStart">#D8E6F9</Color>
+    <SolidColorBrush x:Key="Glass.Caption" Color="{StaticResource Glass.BackdropStart}" />
+    <SolidColorBrush x:Key="Glass.Orb.Blue" Color="#706EB6F5" />
+    <SolidColorBrush x:Key="Glass.Orb.Mint" Color="#6072D8CA" />
+    <SolidColorBrush x:Key="Glass.Orb.Violet" Color="#607F8BF2" />
+    <LinearGradientBrush x:Key="Glass.Backdrop" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="{StaticResource Glass.BackdropStart}" Offset="0" />
+        <GradientStop Color="#EDF7FC" Offset="0.52" />
+        <GradientStop Color="#E2E6F9" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Glass.Surface" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#F8FFFFFF" Offset="0" />
+        <GradientStop Color="#DBF0F6FF" Offset="0.52" />
+        <GradientStop Color="#E8F4F6FF" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Glass.Button" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#FBFFFFFF" Offset="0" />
+        <GradientStop Color="#D9F5FAFF" Offset="0.52" />
+        <GradientStop Color="#DFDFEBFB" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="Glass.Accent" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#1760CE" Offset="0" />
+        <GradientStop Color="#2452C3" Offset="0.52" />
+        <GradientStop Color="#4C43C2" Offset="1" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="Glass.Inset" Color="#9DDCE8F9" />
+    <SolidColorBrush x:Key="Glass.Viewfinder" Color="#81436699" />
+    <SolidColorBrush x:Key="Glass.ViewfinderText" Color="#9EB4D3" />
+    <RadialGradientBrush x:Key="Glass.AmbientBlue" GradientOrigin="0.24,0.22" Center="0.25,0.25"
+                         RadiusX="0.76" RadiusY="0.75">
+        <GradientStop Color="#72B6D6FF" Offset="0" />
+        <GradientStop Color="#607A92FF" Offset="0.48" />
+        <GradientStop Color="#00000000" Offset="1" />
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="Glass.AmbientMint" GradientOrigin="0.85,0.63" Center="0.82,0.65"
+                         RadiusX="0.64" RadiusY="0.84">
+        <GradientStop Color="#6556C8D3" Offset="0" />
+        <GradientStop Color="#00000000" Offset="1" />
+    </RadialGradientBrush>
+    <LinearGradientBrush x:Key="Glass.Rim" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Color="#8CAFCEFF" Offset="0" />
+        <GradientStop Color="#00000000" Offset="0.85" />
+    </LinearGradientBrush>
+</ResourceDictionary>

@@ -1,0 +1,1163 @@
+{
+    "handles": {
+        "AffineTransContourXld": {"calls": ["AffineTransContourXld", "HomMat2dIdentity", "HomMat2dScale", "HomMat2dRotate", "HomMat2dTranslate"]},
+        "AngleLL": {"calls": ["AngleLl"]},
+        "AngleLX": {"calls": ["AngleLx", "GenContourPolygonXld"]},
+        "AreaCenter": {"calls": ["AreaCenter"]},
+        "AreaCenterGray": {"calls": ["AreaCenterGray"]},
+        "AreaCenterXld": {"calls": ["AreaCenterXld"]},
+        "AutoThreshold": {"calls": ["AutoThreshold"]},
+        "BinaryThreshold": {"calls": ["BinaryThreshold"]},
+        "BottomHat": {"calls": ["BottomHat", "GenCircle"]},
+        "Circularity": {"calls": ["RegionFeatures"], "note": "调用 region_features 读取 circularity 特征。"},
+        "CircularityXld": {"calls": ["CircularityXld"]},
+        "ClearShapeModel": {"calls": ["ClearShapeModel"]},
+        "CloseContoursXld": {"calls": ["CloseContoursXld"]},
+        "ClosingRectangle": {"calls": ["ClosingRectangle1"]},
+        "CommReceive": {"calls": []},
+        "CommSend": {"calls": []},
+        "Compactness": {"calls": ["RegionFeatures"], "note": "调用 region_features 读取 compactness 特征。"},
+        "CompactnessXld": {"calls": ["CompactnessXld"]},
+        "CompareCondition": {"calls": ["GetObjClass"], "note": "比较逻辑由 VisionFlow 实现。get_obj_class 用于识别输入的图形对象类型。"},
+        "ConditionalBranch": {"calls": []},
+        "Connection": {"calls": ["Connection"]},
+        "ContourFeatures": {"calls": ["LengthXld", "AreaCenterXld", "CircularityXld", "ConvexityXld", "SmoothContoursXld"]},
+        "ContourLength": {"calls": ["LengthXld", "SmoothContoursXld"]},
+        "ContourPerimeter": {"calls": ["RegionFeatures"], "note": "通过 region_features 的 perimeter 特征计算区域周长。"},
+        "Convexity": {"calls": ["RegionFeatures"], "note": "调用 region_features 读取 convexity 特征。"},
+        "ConvexityXld": {"calls": ["ConvexityXld"]},
+        "Counter": {"calls": []},
+        "CreateScaledShapeModel": {"calls": ["CreateScaledShapeModel", "ReduceDomain", "GetShapeModelContours"]},
+        "CreateShapeModel": {"calls": ["CreateShapeModel", "ReduceDomain", "GetShapeModelContours", "WriteShapeModel", "VectorAngleToRigid", "AffineTransContourXld", "AreaCenter", "GetDomain"]},
+        "DefectMeasure": {"calls": ["Connection", "SelectShape", "CountObj", "AreaCenter", "TupleSum"], "note": "组合区域拆分、面积筛选和统计，OK / NG 判定由 VisionFlow 执行。"},
+        "DelayWait": {"calls": []},
+        "DisplayInfo": {"calls": ["GetObjClass"], "note": "文本组合与叠加显示由 VisionFlow 实现。get_obj_class 用于识别背景对象类型。"},
+        "DistanceContours": {"calls": ["DistanceCcMin"]},
+        "DistancePL": {"calls": ["DistancePl", "ProjectionPl"]},
+        "DistancePP": {"calls": ["DistancePp"]},
+        "DynThreshold": {"calls": ["DynThreshold", "MeanImage"], "note": "节点先用均值滤波生成局部阈值图，再执行动态阈值分割。"},
+        "EccentricityXld": {"calls": ["EccentricityXld"]},
+        "EdgeTrigger": {"calls": []},
+        "EdgesSubPix": {"calls": ["EdgesSubPix"]},
+        "Elongation": {"calls": ["RegionFeatures"], "note": "调用 region_features 读取 elongation 特征。"},
+        "Emphasize": {"calls": ["Emphasize"]},
+        "EquHistoImage": {"calls": ["EquHistoImage"]},
+        "FastThreshold": {"calls": ["FastThreshold"]},
+        "FillUp": {"calls": ["FillUp"]},
+        "FindScaledShapeModel": {"calls": ["FindScaledShapeModel", "GetShapeModelContours", "GenEmptyObj", "VectorAngleToRigid", "HomMat2dScale", "AffineTransContourXld", "ConcatObj"]},
+        "FindShapeModel": {"calls": ["FindShapeModel", "GetShapeModelContours", "GenEmptyObj", "VectorAngleToRigid", "AffineTransContourXld", "ConcatObj"]},
+        "FitCircleContourXld": {"calls": ["FitCircleContourXld", "GenCircleContourXld", "GenEmptyObj"]},
+        "FitEllipseContourXld": {"calls": ["FitEllipseContourXld", "GenEllipseContourXld", "GenEmptyObj"]},
+        "FitLineContourXld": {"calls": ["FitLineContourXld", "GenContourPolygonXld", "GenEmptyObj"]},
+        "GenCircle": {"calls": ["GenCircle"]},
+        "GenContoursSkeletonXld": {"calls": ["GenContoursSkeletonXld"]},
+        "GenEllipse": {"calls": ["GenEllipse"]},
+        "GenEmptyRegion": {"calls": ["GenEmptyRegion"]},
+        "GenRectangle1": {"calls": ["GenRectangle1"]},
+        "GenRectangle2": {"calls": ["GenRectangle2"]},
+        "GetShapeModelContours": {"calls": ["GetShapeModelContours"]},
+        "GrayClosingRect": {"calls": ["GrayClosingRect"]},
+        "GrayOpeningRect": {"calls": ["GrayOpeningRect"]},
+        "HttpRequest": {"calls": []},
+        "HysteresisThreshold": {"calls": ["HysteresisThreshold"]},
+        "Illuminate": {"calls": ["Illuminate"]},
+        "InnerCircle": {"calls": ["InnerCircle", "GenCircle"]},
+        "InnerRectangle1": {"calls": ["InnerRectangle1", "GenRectangle1"]},
+        "Intensity": {"calls": ["Intensity", "GetObjClass", "GetDomain"]},
+        "LengthXld": {"calls": ["LengthXld"]},
+        "LinesGauss": {"calls": ["LinesGauss"]},
+        "LocalThreshold": {"calls": ["LocalThreshold"]},
+        "LogicGate": {"calls": []},
+        "MeanImage": {"calls": ["MeanImage"]},
+        "MedianImage": {"calls": ["MedianImage"]},
+        "MinMaxGray": {"calls": ["MinMaxGray"]},
+        "ModbusDriver": {"calls": []},
+        "ModbusTcpRead": {"calls": []},
+        "ModbusTcpWrite": {"calls": []},
+        "Morphology": {"calls": ["OpeningCircle", "DilationCircle", "ErosionCircle", "ClosingCircle"], "note": "根据节点设置，在圆形开运算、闭运算、膨胀和腐蚀中选择一种。"},
+        "OpeningRectangle": {"calls": ["OpeningRectangle1"]},
+        "Orientation": {"calls": ["RegionFeatures"], "note": "调用 region_features 读取 orientation 特征。 HALCON 返回弧度，节点将结果转换为度。"},
+        "OrientationXld": {"calls": ["OrientationXld"]},
+        "PlcRead": {"calls": []},
+        "PlcWrite": {"calls": []},
+        "ReadImage": {"calls": ["ReadImage", "GetImageSize"], "note": "HALCON 每次读取节点选中的文件。列表、索引和读取模式由 VisionFlow 管理。"},
+        "ReadShapeModel": {"calls": ["ReadShapeModel", "GetShapeModelContours"]},
+        "Rectangularity": {"calls": ["RegionFeatures"], "note": "调用 region_features 读取 rectangularity 特征。"},
+        "ReduceDomain": {"calls": ["ReduceDomain", "GenRectangle1", "GenRectangle2", "GenCircle"]},
+        "RelAngleLL": {"calls": ["AngleLx"], "note": "对两条直线分别计算与横轴的夹角，再求相对角度。"},
+        "RgbToGray": {"calls": ["Rgb1ToGray"]},
+        "SamplingGate": {"calls": []},
+        "ScaleImage": {"calls": ["ScaleImage"]},
+        "SegmentContourAttribXld": {"calls": ["SegmentContourAttribXld"]},
+        "SegmentContoursXld": {"calls": ["SegmentContoursXld"]},
+        "SegmentContoursXldPoint": {"calls": ["GetContourXld"]},
+        "SelectContoursXld": {"calls": ["SelectContoursXld"]},
+        "SelectShape": {"calls": ["SelectShape"]},
+        "SerialSend": {"calls": []},
+        "SetShapeModelOrigin": {"calls": ["SetShapeModelOrigin"]},
+        "ShapeTrans": {"calls": ["ShapeTrans"]},
+        "Skeleton": {"calls": ["Skeleton"]},
+        "SmallestCircle": {"calls": ["SmallestCircle", "GenCircle"]},
+        "SmallestCircleXld": {"calls": ["SmallestCircleXld", "GenCircleContourXld"]},
+        "SmallestRectangle1": {"calls": ["SmallestRectangle1", "GenRectangle1"]},
+        "SmallestRectangle2": {"calls": ["SmallestRectangle2", "GenRectangle2"]},
+        "SmallestRectangle2Xld": {"calls": ["SmallestRectangle2Xld", "GenRectangle2ContourXld"]},
+        "SmoothContoursXld": {"calls": ["SmoothContoursXld"]},
+        "SobelAmp": {"calls": ["SobelAmp"]},
+        "SortContoursXld": {"calls": ["SortContoursXld"]},
+        "TcpReceive": {"calls": []},
+        "TcpSend": {"calls": []},
+        "Threshold": {"calls": ["Threshold"], "note": "节点的最小灰度与最大灰度分别传给 MinGray 与 MaxGray。"},
+        "TopHat": {"calls": ["TopHat", "GenCircle"]},
+        "UnionAdjacentContoursXld": {"calls": ["UnionAdjacentContoursXld"]},
+        "UnionCoclircularContoursXld": {"calls": ["UnionCocircularContoursXld"]},
+        "UnionCollinearContoursXld": {"calls": ["UnionCollinearContoursXld"]},
+        "UnionRegion": {"calls": ["Union1"]},
+        "VarThreshold": {"calls": ["VarThreshold"]},
+        "VariableGet": {"calls": []},
+        "VariableSet": {"calls": []},
+        "WriteShapeModel": {"calls": ["WriteShapeModel"]}
+    },
+    "operators": {
+        "AffineTransContourXld": {
+            "name": "affine_trans_contour_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "ContoursAffineTrans", "role": "output_object", "type": "xld_cont", "description": "应用二维仿射变换后的 XLD 轮廓。"},
+                {"name": "HomMat2D", "role": "input_control", "type": "hom_mat2d", "description": "输入的二维齐次变换矩阵。"}
+            ]
+        },
+        "AngleLl": {
+            "name": "angle_ll",
+            "parameters": [
+                {"name": "RowA1", "role": "input_control", "type": "point.y", "description": "第一条直线起点的行坐标。"},
+                {"name": "ColumnA1", "role": "input_control", "type": "point.x", "description": "第一条直线起点的列坐标。"},
+                {"name": "RowA2", "role": "input_control", "type": "point.y", "description": "第一条直线终点的行坐标。"},
+                {"name": "ColumnA2", "role": "input_control", "type": "point.x", "description": "第一条直线终点的列坐标。"},
+                {"name": "RowB1", "role": "input_control", "type": "point.y", "description": "第二条直线起点的行坐标。"},
+                {"name": "ColumnB1", "role": "input_control", "type": "point.x", "description": "第二条直线起点的列坐标。"},
+                {"name": "RowB2", "role": "input_control", "type": "point.y", "description": "第二条直线终点的行坐标。"},
+                {"name": "ColumnB2", "role": "input_control", "type": "point.x", "description": "第二条直线终点的列坐标。"},
+                {"name": "Angle", "role": "output_control", "type": "angle.rad", "description": "第一条直线到第二条直线的有向夹角（弧度）。"}
+            ]
+        },
+        "AngleLx": {
+            "name": "angle_lx",
+            "parameters": [
+                {"name": "Row1", "role": "input_control", "type": "point.y", "description": "第一个点的行坐标。"},
+                {"name": "Column1", "role": "input_control", "type": "point.x", "description": "第一个点的列坐标。"},
+                {"name": "Row2", "role": "input_control", "type": "point.y", "description": "第二个点的行坐标。"},
+                {"name": "Column2", "role": "input_control", "type": "point.x", "description": "第二个点的列坐标。"},
+                {"name": "Angle", "role": "output_control", "type": "angle.rad", "description": "直线与图像横轴的有向夹角（弧度）。"}
+            ]
+        },
+        "AreaCenter": {
+            "name": "area_center",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Area", "role": "output_control", "type": "integer", "description": "每个对象的面积，图像区域以像素数表示。"},
+                {"name": "Row", "role": "output_control", "type": "point.y", "description": "区域形心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "point.x", "description": "区域形心的列坐标。"}
+            ]
+        },
+        "AreaCenterGray": {
+            "name": "area_center_gray",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Area", "role": "output_control", "type": "real", "description": "区域内全部像素的灰度值之和。"},
+                {"name": "Row", "role": "output_control", "type": "point.y", "description": "灰度加权重心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "point.x", "description": "灰度加权重心的列坐标。"}
+            ]
+        },
+        "AreaCenterXld": {
+            "name": "area_center_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Area", "role": "output_control", "type": "real", "description": "XLD 轮廓或多边形包围的面积。"},
+                {"name": "Row", "role": "output_control", "type": "point.y", "description": "轮廓所包围区域形心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "point.x", "description": "轮廓所包围区域形心的列坐标。"},
+                {"name": "PointOrder", "role": "output_control", "type": "string", "description": "沿边界遍历轮廓点的方向。"}
+            ]
+        },
+        "AutoThreshold": {
+            "name": "auto_threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Regions", "role": "output_object", "type": "region", "description": "从图像灰度直方图的各分割区间生成的区域。"},
+                {"name": "Sigma", "role": "input_control", "type": "number", "description": "高斯平滑的标准差，数值越大平滑越强。", "default": "2"}
+            ]
+        },
+        "BinaryThreshold": {
+            "name": "binary_threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Region", "role": "output_object", "type": "region", "description": "所选亮暗极性对应的分割区域。"},
+                {"name": "Method", "role": "input_control", "type": "string", "description": "用于计算阈值的分割方法。", "default": "\"max_separability\""},
+                {"name": "LightDark", "role": "input_control", "type": "string", "description": "要提取亮目标还是暗目标，具体选项取决于算子。", "default": "\"dark\""},
+                {"name": "UsedThreshold", "role": "output_control", "type": "number", "description": "本次分割自动计算出的实际阈值。"}
+            ]
+        },
+        "BottomHat": {
+            "name": "bottom_hat",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "StructElement", "role": "input_object", "type": "region", "description": "执行形态学运算时使用的结构元素区域。"},
+                {"name": "RegionBottomHat", "role": "output_object", "type": "region", "description": "底帽变换后的区域。"}
+            ]
+        },
+        "CircularityXld": {
+            "name": "circularity_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Circularity", "role": "output_control", "type": "real", "description": "轮廓的圆度，越接近 1 越接近圆形。", "constraint": "0 <= Circularity && Circularity <= 1.0"}
+            ]
+        },
+        "ClearShapeModel": {
+            "name": "clear_shape_model",
+            "parameters": [
+                {"name": "ModelID", "role": "input_control", "type": "shape_model", "description": "已创建或读取的形状模板句柄。"}
+            ]
+        },
+        "CloseContoursXld": {
+            "name": "close_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "ClosedContours", "role": "output_object", "type": "xld_cont", "description": "闭合处理后的 XLD 轮廓。"}
+            ]
+        },
+        "ClosingCircle": {
+            "name": "closing_circle",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionClosing", "role": "output_object", "type": "region", "description": "闭运算后的区域。"},
+                {"name": "Radius", "role": "input_control", "type": "real", "description": "圆或圆形结构元素的半径（像素）。", "default": "3.5"}
+            ]
+        },
+        "ClosingRectangle1": {
+            "name": "closing_rectangle1",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionClosing", "role": "output_object", "type": "region", "description": "闭运算后的区域。"},
+                {"name": "Width", "role": "input_control", "type": "extent.x", "description": "矩形结构元素的宽度（像素）。", "default": "10"},
+                {"name": "Height", "role": "input_control", "type": "extent.y", "description": "矩形结构元素的高度（像素）。", "default": "10"}
+            ]
+        },
+        "CompactnessXld": {
+            "name": "compactness_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Compactness", "role": "output_control", "type": "real", "description": "轮廓的紧凑度，越接近 1 越接近圆形。", "constraint": "Compactness >= 1.0 || Compactness == 0"}
+            ]
+        },
+        "ConcatObj": {
+            "name": "concat_obj",
+            "parameters": [
+                {"name": "Objects1", "role": "input_object", "type": "object", "description": "要拼接的第一组图形对象。"},
+                {"name": "Objects2", "role": "input_object", "type": "object", "description": "要拼接到第一组之后的图形对象。"},
+                {"name": "ObjectsConcat", "role": "output_object", "type": "object", "description": "按输入顺序拼接的图形对象元组。"}
+            ]
+        },
+        "Connection": {
+            "name": "connection",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "ConnectedRegions", "role": "output_object", "type": "region", "description": "从输入区域分离出的各个连通分量。"}
+            ]
+        },
+        "ConvexityXld": {
+            "name": "convexity_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Convexity", "role": "output_control", "type": "real", "description": "轮廓的凸性，越接近 1 越接近凸形。", "constraint": "Convexity <= 1"}
+            ]
+        },
+        "CountObj": {
+            "name": "count_obj",
+            "parameters": [
+                {"name": "Objects", "role": "input_object", "type": "object", "description": "要统计数量的图形对象元组。"},
+                {"name": "Number", "role": "output_control", "type": "integer", "description": "图形对象元组中的对象数。"}
+            ]
+        },
+        "CreateScaledShapeModel": {
+            "name": "create_scaled_shape_model",
+            "parameters": [
+                {"name": "Template", "role": "input_object", "type": "image", "description": "用于创建模板的图像，其图像域限定训练区域。"},
+                {"name": "NumLevels", "role": "input_control", "type": "integer", "description": "用于创建或搜索模板的图像金字塔层数。", "default": "\"auto\""},
+                {"name": "AngleStart", "role": "input_control", "type": "angle.rad", "description": "搜索或训练角度范围的起点（弧度）。", "default": "-0.39"},
+                {"name": "AngleExtent", "role": "input_control", "type": "angle.rad", "description": "从起始角度开始的角度范围（弧度）。", "default": "0.79", "constraint": "AngleExtent >= 0"},
+                {"name": "AngleStep", "role": "input_control", "type": "angle.rad", "description": "模板离散角度的采样步长（弧度）。", "default": "\"auto\"", "constraint": "AngleStep >= 0 && AngleStep <= pi / 2"},
+                {"name": "ScaleMin", "role": "input_control", "type": "number", "description": "允许的最小等比例缩放因子。", "default": "0.9", "constraint": "ScaleMin > 0"},
+                {"name": "ScaleMax", "role": "input_control", "type": "number", "description": "允许的最大等比例缩放因子。", "default": "1.1", "constraint": "ScaleMax >= ScaleMin"},
+                {"name": "ScaleStep", "role": "input_control", "type": "number", "description": "模板离散缩放因子的采样步长。", "default": "\"auto\"", "constraint": "ScaleStep >= 0"},
+                {"name": "Optimization", "role": "input_control", "type": "string", "description": "构建形状模板时的模型优化策略。", "default": "\"auto\""},
+                {"name": "Metric", "role": "input_control", "type": "string", "description": "匹配时考虑局部对比度极性的方式。", "default": "\"use_polarity\""},
+                {"name": "Contrast", "role": "input_control", "type": "number", "description": "提取模板轮廓点时的对比度条件，可包含滞后阈值和最小结构尺寸。", "default": "\"auto\""},
+                {"name": "MinContrast", "role": "input_control", "type": "number", "description": "待搜索图像中目标所需的最小对比度。", "default": "\"auto\"", "constraint": "MinContrast < Contrast"},
+                {"name": "ModelID", "role": "output_control", "type": "shape_model", "description": "生成或读取的形状模板句柄。"}
+            ]
+        },
+        "CreateShapeModel": {
+            "name": "create_shape_model",
+            "parameters": [
+                {"name": "Template", "role": "input_object", "type": "image", "description": "用于创建模板的图像，其图像域限定训练区域。"},
+                {"name": "NumLevels", "role": "input_control", "type": "integer", "description": "用于创建或搜索模板的图像金字塔层数。", "default": "\"auto\""},
+                {"name": "AngleStart", "role": "input_control", "type": "angle.rad", "description": "搜索或训练角度范围的起点（弧度）。", "default": "-0.39"},
+                {"name": "AngleExtent", "role": "input_control", "type": "angle.rad", "description": "从起始角度开始的角度范围（弧度）。", "default": "0.79", "constraint": "AngleExtent >= 0"},
+                {"name": "AngleStep", "role": "input_control", "type": "angle.rad", "description": "模板离散角度的采样步长（弧度）。", "default": "\"auto\"", "constraint": "AngleStep >= 0 && AngleStep <= pi / 2"},
+                {"name": "Optimization", "role": "input_control", "type": "string", "description": "构建形状模板时的模型优化策略。", "default": "\"auto\""},
+                {"name": "Metric", "role": "input_control", "type": "string", "description": "匹配时考虑局部对比度极性的方式。", "default": "\"use_polarity\""},
+                {"name": "Contrast", "role": "input_control", "type": "number", "description": "提取模板轮廓点时的对比度条件，可包含滞后阈值和最小结构尺寸。", "default": "\"auto\""},
+                {"name": "MinContrast", "role": "input_control", "type": "number", "description": "待搜索图像中目标所需的最小对比度。", "default": "\"auto\"", "constraint": "MinContrast < Contrast"},
+                {"name": "ModelID", "role": "output_control", "type": "shape_model", "description": "生成或读取的形状模板句柄。"}
+            ]
+        },
+        "DilationCircle": {
+            "name": "dilation_circle",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionDilation", "role": "output_object", "type": "region", "description": "膨胀后的区域。"},
+                {"name": "Radius", "role": "input_control", "type": "real", "description": "圆或圆形结构元素的半径（像素）。", "default": "3.5"}
+            ]
+        },
+        "DistanceCcMin": {
+            "name": "distance_cc_min",
+            "parameters": [
+                {"name": "Contour1", "role": "input_object", "type": "xld_cont", "description": "参与距离测量的第一条 XLD 轮廓。"},
+                {"name": "Contour2", "role": "input_object", "type": "xld_cont", "description": "参与距离测量的第二条 XLD 轮廓。"},
+                {"name": "Mode", "role": "input_control", "type": "string", "description": "计算最小距离时使用轮廓点或多边形线段的模式。", "default": "\"fast_point_to_segment\""},
+                {"name": "DistanceMin", "role": "output_control", "type": "number", "description": "两条轮廓之间的最小距离（像素）。"}
+            ]
+        },
+        "DistancePl": {
+            "name": "distance_pl",
+            "parameters": [
+                {"name": "Row", "role": "input_control", "type": "point.y", "description": "行坐标（沿图像纵向）。"},
+                {"name": "Column", "role": "input_control", "type": "point.x", "description": "列坐标（沿图像横向）。"},
+                {"name": "Row1", "role": "input_control", "type": "point.y", "description": "第一个点的行坐标。"},
+                {"name": "Column1", "role": "input_control", "type": "point.x", "description": "第一个点的列坐标。"},
+                {"name": "Row2", "role": "input_control", "type": "point.y", "description": "第二个点的行坐标。"},
+                {"name": "Column2", "role": "input_control", "type": "point.x", "description": "第二个点的列坐标。"},
+                {"name": "Distance", "role": "output_control", "type": "real", "description": "给定点到直线的垂直距离（像素）。"}
+            ]
+        },
+        "DistancePp": {
+            "name": "distance_pp",
+            "parameters": [
+                {"name": "Row1", "role": "input_control", "type": "point.y", "description": "第一个点的行坐标。"},
+                {"name": "Column1", "role": "input_control", "type": "point.x", "description": "第一个点的列坐标。"},
+                {"name": "Row2", "role": "input_control", "type": "point.y", "description": "第二个点的行坐标。"},
+                {"name": "Column2", "role": "input_control", "type": "point.x", "description": "第二个点的列坐标。"},
+                {"name": "Distance", "role": "output_control", "type": "real", "description": "两点之间的欧氏距离（像素）。"}
+            ]
+        },
+        "DynThreshold": {
+            "name": "dyn_threshold",
+            "parameters": [
+                {"name": "OrigImage", "role": "input_object", "type": "image", "description": "与局部阈值图比较的原始图像。"},
+                {"name": "ThresholdImage", "role": "input_object", "type": "image", "description": "为每个像素提供局部阈值的参考图像，通常是平滑后的原图。"},
+                {"name": "RegionDynThresh", "role": "output_object", "type": "region", "description": "满足动态比较条件的像素区域。"},
+                {"name": "Offset", "role": "input_control", "type": "number", "description": "原图相对阈值图所需的灰度差。", "default": "5"},
+                {"name": "LightDark", "role": "input_control", "type": "string", "description": "要提取亮目标还是暗目标，具体选项取决于算子。", "default": "\"light\""}
+            ]
+        },
+        "EccentricityXld": {
+            "name": "eccentricity_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Anisometry", "role": "output_control", "type": "real", "description": "由轮廓等效椭圆长短轴关系得到的各向异性指标。", "constraint": "Anisometry >= 1.0"},
+                {"name": "Bulkiness", "role": "output_control", "type": "real", "description": "衡量轮廓偏离其等效椭圆程度的体积度指标。"},
+                {"name": "StructureFactor", "role": "output_control", "type": "real", "description": "由各向异性和体积度进一步导出的结构指标。"}
+            ]
+        },
+        "EdgesSubPix": {
+            "name": "edges_sub_pix",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Edges", "role": "output_object", "type": "xld_cont", "description": "提取到的亚像素边缘 XLD 轮廓。"},
+                {"name": "Filter", "role": "input_control", "type": "string", "description": "亚像素边缘提取使用的滤波器。", "default": "\"canny\""},
+                {"name": "Alpha", "role": "input_control", "type": "real", "description": "边缘滤波器的参数，控制平滑程度，具体效果依滤波器而定。", "default": "1", "constraint": "Alpha > 0.0"},
+                {"name": "Low", "role": "input_control", "type": "integer", "description": "滞后判断的低阈值，用来保留与强响应相连的弱响应。", "default": "20", "constraint": "Low > 0"},
+                {"name": "High", "role": "input_control", "type": "integer", "description": "滞后判断的高阈值，用来确定强响应。", "default": "40", "constraint": "High > 0 && High >= Low"}
+            ]
+        },
+        "Emphasize": {
+            "name": "emphasize",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageEmphasize", "role": "output_object", "type": "image", "description": "增强局部对比度后的图像。"},
+                {"name": "MaskWidth", "role": "input_control", "type": "extent.x", "description": "局部运算窗口的宽度（像素）。", "default": "7"},
+                {"name": "MaskHeight", "role": "input_control", "type": "extent.y", "description": "局部运算窗口的高度（像素）。", "default": "7"},
+                {"name": "Factor", "role": "input_control", "type": "real", "description": "调节局部对比度增强量的系数。", "default": "1"}
+            ]
+        },
+        "EquHistoImage": {
+            "name": "equ_histo_image",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageEquHisto", "role": "output_object", "type": "image", "description": "直方图均衡化后的图像。"}
+            ]
+        },
+        "ErosionCircle": {
+            "name": "erosion_circle",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionErosion", "role": "output_object", "type": "region", "description": "腐蚀后的区域。"},
+                {"name": "Radius", "role": "input_control", "type": "real", "description": "圆或圆形结构元素的半径（像素）。", "default": "3.5"}
+            ]
+        },
+        "FastThreshold": {
+            "name": "fast_threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Region", "role": "output_object", "type": "region", "description": "快速阈值分割得到的区域。"},
+                {"name": "MinGray", "role": "input_control", "type": "number", "description": "灰度下限，包含该值。", "default": "128"},
+                {"name": "MaxGray", "role": "input_control", "type": "number", "description": "灰度上限，包含该值。", "default": "255"},
+                {"name": "MinSize", "role": "input_control", "type": "number", "description": "待提取对象的最小尺寸（像素）。", "default": "20"}
+            ]
+        },
+        "FillUp": {
+            "name": "fill_up",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionFillUp", "role": "output_object", "type": "region", "description": "内部孔洞填充后的区域。"}
+            ]
+        },
+        "FindScaledShapeModel": {
+            "name": "find_scaled_shape_model",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ModelID", "role": "input_control", "type": "shape_model", "description": "已创建或读取的形状模板句柄。"},
+                {"name": "AngleStart", "role": "input_control", "type": "angle.rad", "description": "搜索或训练角度范围的起点（弧度）。", "default": "-0.39"},
+                {"name": "AngleExtent", "role": "input_control", "type": "angle.rad", "description": "从起始角度开始的角度范围（弧度）。", "default": "0.78", "constraint": "AngleExtent >= 0"},
+                {"name": "ScaleMin", "role": "input_control", "type": "number", "description": "允许的最小等比例缩放因子。", "default": "0.9", "constraint": "ScaleMin > 0"},
+                {"name": "ScaleMax", "role": "input_control", "type": "number", "description": "允许的最大等比例缩放因子。", "default": "1.1", "constraint": "ScaleMax >= ScaleMin"},
+                {"name": "MinScore", "role": "input_control", "type": "real", "description": "一个匹配结果被接受所需的最低匹配分数。", "default": "0.5"},
+                {"name": "NumMatches", "role": "input_control", "type": "integer", "description": "最多返回的匹配数，0 表示返回所有符合条件的匹配。", "default": "1"},
+                {"name": "MaxOverlap", "role": "input_control", "type": "real", "description": "允许两个匹配结果重叠的最大比例。", "default": "0.5"},
+                {"name": "SubPixel", "role": "input_control", "type": "string", "description": "匹配位置与姿态的亚像素细化方法。", "default": "\"least_squares\""},
+                {"name": "NumLevels", "role": "input_control", "type": "integer", "description": "用于创建或搜索模板的图像金字塔层数。", "default": "0"},
+                {"name": "Greediness", "role": "input_control", "type": "real", "description": "搜索启发式的速度倾向，越接近 1 越快，也越可能漏检。", "default": "0.9"},
+                {"name": "Row", "role": "output_control", "type": "point.y", "description": "各匹配实例参考点的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "point.x", "description": "各匹配实例参考点的列坐标。"},
+                {"name": "Angle", "role": "output_control", "type": "angle.rad", "description": "求得的角度（弧度）。"},
+                {"name": "Scale", "role": "output_control", "type": "number", "description": "匹配到的目标相对于模板的缩放因子。"},
+                {"name": "Score", "role": "output_control", "type": "real", "description": "匹配相似度分数，越接近 1 越匹配。"}
+            ]
+        },
+        "FindShapeModel": {
+            "name": "find_shape_model",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ModelID", "role": "input_control", "type": "shape_model", "description": "已创建或读取的形状模板句柄。"},
+                {"name": "AngleStart", "role": "input_control", "type": "angle.rad", "description": "搜索或训练角度范围的起点（弧度）。", "default": "-0.39"},
+                {"name": "AngleExtent", "role": "input_control", "type": "angle.rad", "description": "从起始角度开始的角度范围（弧度）。", "default": "0.79", "constraint": "AngleExtent >= 0"},
+                {"name": "MinScore", "role": "input_control", "type": "real", "description": "一个匹配结果被接受所需的最低匹配分数。", "default": "0.5"},
+                {"name": "NumMatches", "role": "input_control", "type": "integer", "description": "最多返回的匹配数，0 表示返回所有符合条件的匹配。", "default": "1"},
+                {"name": "MaxOverlap", "role": "input_control", "type": "real", "description": "允许两个匹配结果重叠的最大比例。", "default": "0.5"},
+                {"name": "SubPixel", "role": "input_control", "type": "string", "description": "匹配位置与姿态的亚像素细化方法。", "default": "\"least_squares\""},
+                {"name": "NumLevels", "role": "input_control", "type": "integer", "description": "用于创建或搜索模板的图像金字塔层数。", "default": "0"},
+                {"name": "Greediness", "role": "input_control", "type": "real", "description": "搜索启发式的速度倾向，越接近 1 越快，也越可能漏检。", "default": "0.9"},
+                {"name": "Row", "role": "output_control", "type": "point.y", "description": "各匹配实例参考点的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "point.x", "description": "各匹配实例参考点的列坐标。"},
+                {"name": "Angle", "role": "output_control", "type": "angle.rad", "description": "求得的角度（弧度）。"},
+                {"name": "Score", "role": "output_control", "type": "real", "description": "匹配相似度分数，越接近 1 越匹配。"}
+            ]
+        },
+        "FitCircleContourXld": {
+            "name": "fit_circle_contour_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "Algorithm", "role": "input_control", "type": "string", "description": "拟合算法以及对离群点的处理方式。", "default": "\"algebraic\""},
+                {"name": "MaxNumPoints", "role": "input_control", "type": "integer", "description": "参与每条轮廓拟合的最大点数，-1 表示使用全部点。", "default": "-1", "constraint": "MaxNumPoints >= 3"},
+                {"name": "MaxClosureDist", "role": "input_control", "type": "real", "description": "仍视为闭合轮廓时，首尾两点允许的最大距离（像素）。", "default": "0", "constraint": "MaxClosureDist >= 0.0"},
+                {"name": "ClippingEndPoints", "role": "input_control", "type": "integer", "description": "拟合时从轮廓首尾各排除的点数。", "default": "0", "constraint": "ClippingEndPoints >= 0"},
+                {"name": "Iterations", "role": "input_control", "type": "integer", "description": "算法执行迭代的次数或上限。", "default": "3", "constraint": "Iterations >= 0"},
+                {"name": "ClippingFactor", "role": "input_control", "type": "real", "description": "稳健拟合对离群点的截断系数。", "default": "2", "constraint": "ClippingFactor > 0"},
+                {"name": "Row", "role": "output_control", "type": "circle.center.y", "description": "拟合圆心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "circle.center.x", "description": "拟合圆心的列坐标。"},
+                {"name": "Radius", "role": "output_control", "type": "circle.radius", "description": "求得的圆半径（像素）。"},
+                {"name": "StartPhi", "role": "output_control", "type": "angle.rad", "description": "拟合弧段的起始角度（弧度）。"},
+                {"name": "EndPhi", "role": "output_control", "type": "angle.rad", "description": "拟合弧段的终止角度（弧度）。"},
+                {"name": "PointOrder", "role": "output_control", "type": "string", "description": "沿边界遍历轮廓点的方向。"}
+            ]
+        },
+        "FitEllipseContourXld": {
+            "name": "fit_ellipse_contour_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "Algorithm", "role": "input_control", "type": "string", "description": "拟合算法以及对离群点的处理方式。", "default": "\"fitzgibbon\""},
+                {"name": "MaxNumPoints", "role": "input_control", "type": "integer", "description": "参与每条轮廓拟合的最大点数，-1 表示使用全部点。", "default": "-1", "constraint": "MaxNumPoints >= 5"},
+                {"name": "MaxClosureDist", "role": "input_control", "type": "real", "description": "仍视为闭合轮廓时，首尾两点允许的最大距离（像素）。", "default": "0", "constraint": "MaxClosureDist >= 0.0"},
+                {"name": "ClippingEndPoints", "role": "input_control", "type": "integer", "description": "拟合时从轮廓首尾各排除的点数。", "default": "0", "constraint": "ClippingEndPoints >= 0"},
+                {"name": "VossTabSize", "role": "input_control", "type": "integer", "description": "Voss 拟合方法离散圆周时使用的分割段数。", "default": "200", "constraint": "VossTabSize >= 25 && VossTabSize <= 5000"},
+                {"name": "Iterations", "role": "input_control", "type": "integer", "description": "算法执行迭代的次数或上限。", "default": "3", "constraint": "Iterations >= 0"},
+                {"name": "ClippingFactor", "role": "input_control", "type": "real", "description": "稳健拟合对离群点的截断系数。", "default": "2", "constraint": "ClippingFactor > 0"},
+                {"name": "Row", "role": "output_control", "type": "ellipse.center.y", "description": "拟合椭圆中心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "ellipse.center.x", "description": "拟合椭圆中心的列坐标。"},
+                {"name": "Phi", "role": "output_control", "type": "ellipse.angle.rad", "description": "计算得到的方向角（弧度）。"},
+                {"name": "Radius1", "role": "output_control", "type": "ellipse.radius1", "description": "拟合得到的椭圆长半轴长度（像素）。"},
+                {"name": "Radius2", "role": "output_control", "type": "ellipse.radius2", "description": "拟合得到的椭圆短半轴长度（像素）。"},
+                {"name": "StartPhi", "role": "output_control", "type": "angle.rad", "description": "拟合弧段的起始角度（弧度）。"},
+                {"name": "EndPhi", "role": "output_control", "type": "angle.rad", "description": "拟合弧段的终止角度（弧度）。"},
+                {"name": "PointOrder", "role": "output_control", "type": "string", "description": "沿边界遍历轮廓点的方向。"}
+            ]
+        },
+        "FitLineContourXld": {
+            "name": "fit_line_contour_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "Algorithm", "role": "input_control", "type": "string", "description": "拟合算法以及对离群点的处理方式。", "default": "\"tukey\""},
+                {"name": "MaxNumPoints", "role": "input_control", "type": "integer", "description": "参与每条轮廓拟合的最大点数，-1 表示使用全部点。", "default": "-1", "constraint": "MaxNumPoints >= 2"},
+                {"name": "ClippingEndPoints", "role": "input_control", "type": "integer", "description": "拟合时从轮廓首尾各排除的点数。", "default": "0", "constraint": "ClippingEndPoints >= 0"},
+                {"name": "Iterations", "role": "input_control", "type": "integer", "description": "算法执行迭代的次数或上限。", "default": "5", "constraint": "Iterations >= 0"},
+                {"name": "ClippingFactor", "role": "input_control", "type": "real", "description": "稳健拟合对离群点的截断系数。", "default": "2", "constraint": "ClippingFactor > 0"},
+                {"name": "RowBegin", "role": "output_control", "type": "line.begin.y", "description": "拟合线段起点的行坐标。"},
+                {"name": "ColBegin", "role": "output_control", "type": "line.begin.x", "description": "拟合线段起点的列坐标。"},
+                {"name": "RowEnd", "role": "output_control", "type": "line.end.y", "description": "拟合线段终点的行坐标。"},
+                {"name": "ColEnd", "role": "output_control", "type": "line.end.x", "description": "拟合线段终点的列坐标。"},
+                {"name": "Nr", "role": "output_control", "type": "number", "description": "拟合直线法向量的行分量。"},
+                {"name": "Nc", "role": "output_control", "type": "number", "description": "拟合直线法向量的列分量。"},
+                {"name": "Dist", "role": "output_control", "type": "number", "description": "拟合直线到坐标原点的法向距离。"}
+            ]
+        },
+        "GenCircle": {
+            "name": "gen_circle",
+            "parameters": [
+                {"name": "Circle", "role": "output_object", "type": "region", "description": "生成的圆形区域。"},
+                {"name": "Row", "role": "input_control", "type": "circle.center.y", "description": "待生成圆的圆心行坐标。", "default": "200"},
+                {"name": "Column", "role": "input_control", "type": "circle.center.x", "description": "待生成圆的圆心列坐标。", "default": "200"},
+                {"name": "Radius", "role": "input_control", "type": "circle.radius", "description": "圆或圆形结构元素的半径（像素）。", "default": "100.5", "constraint": "Radius > 0.0"}
+            ]
+        },
+        "GenCircleContourXld": {
+            "name": "gen_circle_contour_xld",
+            "parameters": [
+                {"name": "ContCircle", "role": "output_object", "type": "xld_cont", "description": "生成的圆或圆弧 XLD 轮廓。"},
+                {"name": "Row", "role": "input_control", "type": "circle.center.y", "description": "待生成圆或圆弧的圆心行坐标。", "default": "200"},
+                {"name": "Column", "role": "input_control", "type": "circle.center.x", "description": "待生成圆或圆弧的圆心列坐标。", "default": "200"},
+                {"name": "Radius", "role": "input_control", "type": "circle.radius", "description": "圆或圆形结构元素的半径（像素）。", "default": "100", "constraint": "Radius > 0"},
+                {"name": "StartPhi", "role": "input_control", "type": "angle.rad", "description": "生成弧段的起始角度（弧度）。", "default": "0"},
+                {"name": "EndPhi", "role": "input_control", "type": "angle.rad", "description": "生成弧段的终止角度（弧度）。", "default": "6.28318"},
+                {"name": "PointOrder", "role": "input_control", "type": "string", "description": "弧段轮廓点的遍历方向。", "default": "\"positive\""},
+                {"name": "Resolution", "role": "input_control", "type": "real", "description": "相邻轮廓点的采样间距（像素）。", "default": "1", "constraint": "Resolution >= 0.00001"}
+            ]
+        },
+        "GenContourPolygonXld": {
+            "name": "gen_contour_polygon_xld",
+            "parameters": [
+                {"name": "Contour", "role": "output_object", "type": "xld_cont", "description": "根据输入生成的 XLD 轮廓。"},
+                {"name": "Row", "role": "input_control", "type": "coordinates.y", "description": "组成多边形轮廓的点的行坐标序列。", "default": "\"[0,1,2,2,2]\""},
+                {"name": "Col", "role": "input_control", "type": "coordinates.x", "description": "列坐标序列。", "default": "\"[0,0,0,1,2]\""}
+            ]
+        },
+        "GenContoursSkeletonXld": {
+            "name": "gen_contours_skeleton_xld",
+            "parameters": [
+                {"name": "Skeleton", "role": "input_object", "type": "region", "description": "供轮廓跟踪使用的骨架区域。"},
+                {"name": "Contours", "role": "output_object", "type": "xld_cont", "description": "根据输入生成的 XLD 轮廓集合。"},
+                {"name": "Length", "role": "input_control", "type": "integer", "description": "输出轮廓所需的最小长度。", "default": "1"},
+                {"name": "Mode", "role": "input_control", "type": "string", "description": "骨架跟踪模式，决定交叉点如何处理以及轮廓的连接方式。", "default": "\"filter\""}
+            ]
+        },
+        "GenEllipse": {
+            "name": "gen_ellipse",
+            "parameters": [
+                {"name": "Ellipse", "role": "output_object", "type": "region", "description": "生成的椭圆区域。"},
+                {"name": "Row", "role": "input_control", "type": "ellipse.center.y", "description": "椭圆中心的行坐标。", "default": "200"},
+                {"name": "Column", "role": "input_control", "type": "ellipse.center.x", "description": "椭圆中心的列坐标。", "default": "200"},
+                {"name": "Phi", "role": "input_control", "type": "ellipse.angle.rad", "description": "几何方向角或旋转角（弧度）。", "default": "0"},
+                {"name": "Radius1", "role": "input_control", "type": "ellipse.radius1", "description": "椭圆的长半轴长度（像素）。", "default": "100", "constraint": "Radius1 > 0"},
+                {"name": "Radius2", "role": "input_control", "type": "ellipse.radius2", "description": "椭圆的短半轴长度（像素）。", "default": "60", "constraint": "Radius2 > 0"}
+            ]
+        },
+        "GenEllipseContourXld": {
+            "name": "gen_ellipse_contour_xld",
+            "parameters": [
+                {"name": "ContEllipse", "role": "output_object", "type": "xld_cont", "description": "生成的椭圆或椭圆弧 XLD 轮廓。"},
+                {"name": "Row", "role": "input_control", "type": "ellipse.center.y", "description": "椭圆或椭圆弧中心的行坐标。", "default": "200"},
+                {"name": "Column", "role": "input_control", "type": "ellipse.center.x", "description": "椭圆或椭圆弧中心的列坐标。", "default": "200"},
+                {"name": "Phi", "role": "input_control", "type": "ellipse.angle.rad", "description": "几何方向角或旋转角（弧度）。", "default": "0"},
+                {"name": "Radius1", "role": "input_control", "type": "ellipse.radius1", "description": "椭圆的长半轴长度（像素）。", "default": "100", "constraint": "Radius1 > 0"},
+                {"name": "Radius2", "role": "input_control", "type": "ellipse.radius2", "description": "椭圆的短半轴长度（像素）。", "default": "50", "constraint": "Radius2 >= 0 && Radius2 <= Radius1"},
+                {"name": "StartPhi", "role": "input_control", "type": "angle.rad", "description": "生成弧段的起始角度（弧度）。", "default": "0"},
+                {"name": "EndPhi", "role": "input_control", "type": "angle.rad", "description": "生成弧段的终止角度（弧度）。", "default": "6.28318"},
+                {"name": "PointOrder", "role": "input_control", "type": "string", "description": "弧段轮廓点的遍历方向。", "default": "\"positive\""},
+                {"name": "Resolution", "role": "input_control", "type": "real", "description": "相邻椭圆轮廓点允许的最大间距（像素）。", "default": "1.5", "constraint": "Resolution >= 1.192e-7"}
+            ]
+        },
+        "GenEmptyObj": {
+            "name": "gen_empty_obj",
+            "parameters": [
+                {"name": "EmptyObject", "role": "output_object", "type": "object", "description": "生成的空图形对象元组。"}
+            ]
+        },
+        "GenEmptyRegion": {
+            "name": "gen_empty_region",
+            "parameters": [
+                {"name": "EmptyRegion", "role": "output_object", "type": "region", "description": "生成的空区域对象。"}
+            ]
+        },
+        "GenRectangle1": {
+            "name": "gen_rectangle1",
+            "parameters": [
+                {"name": "Rectangle", "role": "output_object", "type": "region", "description": "生成的矩形区域。"},
+                {"name": "Row1", "role": "input_control", "type": "rectangle.origin.y", "description": "左上角的行坐标。", "default": "30"},
+                {"name": "Column1", "role": "input_control", "type": "rectangle.origin.x", "description": "左上角的列坐标。", "default": "20"},
+                {"name": "Row2", "role": "input_control", "type": "rectangle.corner.y", "description": "右下角的行坐标。", "default": "100", "constraint": "Row2 >= Row1"},
+                {"name": "Column2", "role": "input_control", "type": "rectangle.corner.x", "description": "右下角的列坐标。", "default": "200", "constraint": "Column2 >= Column1"}
+            ]
+        },
+        "GenRectangle2": {
+            "name": "gen_rectangle2",
+            "parameters": [
+                {"name": "Rectangle", "role": "output_object", "type": "region", "description": "生成的矩形区域。"},
+                {"name": "Row", "role": "input_control", "type": "rectangle2.center.y", "description": "矩形中心的行坐标。", "default": "300"},
+                {"name": "Column", "role": "input_control", "type": "rectangle2.center.x", "description": "矩形中心的列坐标。", "default": "200"},
+                {"name": "Phi", "role": "input_control", "type": "rectangle2.angle.rad", "description": "几何方向角或旋转角（弧度）。", "default": "0", "constraint": "- pi / 2 < Phi && Phi <= pi / 2"},
+                {"name": "Length1", "role": "input_control", "type": "rectangle2.hwidth", "description": "矩形第一条轴的半边长（像素）。", "default": "100"},
+                {"name": "Length2", "role": "input_control", "type": "rectangle2.hheight", "description": "矩形第二条轴的半边长（像素）。", "default": "20"}
+            ]
+        },
+        "GenRectangle2ContourXld": {
+            "name": "gen_rectangle2_contour_xld",
+            "parameters": [
+                {"name": "Rectangle", "role": "output_object", "type": "xld_cont", "description": "生成的矩形 XLD 轮廓。"},
+                {"name": "Row", "role": "input_control", "type": "rectangle2.center.y", "description": "矩形轮廓中心的行坐标。", "default": "300"},
+                {"name": "Column", "role": "input_control", "type": "rectangle2.center.x", "description": "矩形轮廓中心的列坐标。", "default": "200"},
+                {"name": "Phi", "role": "input_control", "type": "rectangle2.angle.rad", "description": "几何方向角或旋转角（弧度）。", "default": "0", "constraint": "- pi / 2 < Phi && Phi <= pi / 2"},
+                {"name": "Length1", "role": "input_control", "type": "rectangle2.hwidth", "description": "矩形第一条轴的半边长（像素）。", "default": "100.5"},
+                {"name": "Length2", "role": "input_control", "type": "rectangle2.hheight", "description": "矩形第二条轴的半边长（像素）。", "default": "20.5"}
+            ]
+        },
+        "GetContourXld": {
+            "name": "get_contour_xld",
+            "parameters": [
+                {"name": "Contour", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓。"},
+                {"name": "Row", "role": "output_control", "type": "point.y", "description": "提取的轮廓点行坐标序列。"},
+                {"name": "Col", "role": "output_control", "type": "point.x", "description": "提取的列坐标序列。"}
+            ]
+        },
+        "GetDomain": {
+            "name": "get_domain",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Domain", "role": "output_object", "type": "region", "description": "输入图像中参与处理的有效像素区域。"}
+            ]
+        },
+        "GetImageSize": {
+            "name": "get_image_size",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Width", "role": "output_control", "type": "extent.x", "description": "图像宽度（像素）。"},
+                {"name": "Height", "role": "output_control", "type": "extent.y", "description": "图像高度（像素）。"}
+            ]
+        },
+        "GetObjClass": {
+            "name": "get_obj_class",
+            "parameters": [
+                {"name": "Object", "role": "input_object", "type": "object", "description": "要查询类别的图形对象。"},
+                {"name": "Class", "role": "output_control", "type": "string", "description": "输入对象的 HALCON 类别名称，如 image、region 或 xld_cont。"}
+            ]
+        },
+        "GetShapeModelContours": {
+            "name": "get_shape_model_contours",
+            "parameters": [
+                {"name": "ModelContours", "role": "output_object", "type": "xld_cont", "description": "指定金字塔层级的模板 XLD 轮廓。"},
+                {"name": "ModelID", "role": "input_control", "type": "shape_model", "description": "已创建或读取的形状模板句柄。"},
+                {"name": "Level", "role": "input_control", "type": "integer", "description": "要提取模板轮廓的金字塔层级，从 1 开始。", "default": "1", "constraint": "Level >= 1"}
+            ]
+        },
+        "GrayClosingRect": {
+            "name": "gray_closing_rect",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageClosing", "role": "output_object", "type": "image", "description": "灰度闭运算后的图像。"},
+                {"name": "MaskHeight", "role": "input_control", "type": "extent.y", "description": "局部运算窗口的高度（像素）。", "default": "11", "constraint": "odd(MaskHeight) && MaskHeight < height(Image) * 2"},
+                {"name": "MaskWidth", "role": "input_control", "type": "extent.x", "description": "局部运算窗口的宽度（像素）。", "default": "11", "constraint": "odd(MaskWidth) && MaskWidth < width(Image) * 2"}
+            ]
+        },
+        "GrayOpeningRect": {
+            "name": "gray_opening_rect",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageOpening", "role": "output_object", "type": "image", "description": "灰度开运算后的图像。"},
+                {"name": "MaskHeight", "role": "input_control", "type": "extent.y", "description": "局部运算窗口的高度（像素）。", "default": "11", "constraint": "odd(MaskHeight) && MaskHeight < height(Image) * 2"},
+                {"name": "MaskWidth", "role": "input_control", "type": "extent.x", "description": "局部运算窗口的宽度（像素）。", "default": "11", "constraint": "odd(MaskWidth) && MaskWidth < width(Image) * 2"}
+            ]
+        },
+        "HomMat2dIdentity": {
+            "name": "hom_mat2d_identity",
+            "parameters": [
+                {"name": "HomMat2DIdentity", "role": "output_control", "type": "hom_mat2d", "description": "无平移、旋转或缩放的二维单位变换矩阵。"}
+            ]
+        },
+        "HomMat2dRotate": {
+            "name": "hom_mat2d_rotate",
+            "parameters": [
+                {"name": "HomMat2D", "role": "input_control", "type": "hom_mat2d", "description": "输入的二维齐次变换矩阵。"},
+                {"name": "Phi", "role": "input_control", "type": "angle.rad", "description": "几何方向角或旋转角（弧度）。", "default": "0.78"},
+                {"name": "Px", "role": "input_control", "type": "point.x", "description": "变换中心的 x 坐标。", "default": "0"},
+                {"name": "Py", "role": "input_control", "type": "point.y", "description": "变换中心的 y 坐标。", "default": "0"},
+                {"name": "HomMat2DRotate", "role": "output_control", "type": "hom_mat2d", "description": "叠加旋转后的二维变换矩阵。"}
+            ]
+        },
+        "HomMat2dScale": {
+            "name": "hom_mat2d_scale",
+            "parameters": [
+                {"name": "HomMat2D", "role": "input_control", "type": "hom_mat2d", "description": "输入的二维齐次变换矩阵。"},
+                {"name": "Sx", "role": "input_control", "type": "number", "description": "沿 x 轴的缩放因子。", "default": "2", "constraint": "Sx != 0"},
+                {"name": "Sy", "role": "input_control", "type": "number", "description": "沿 y 轴的缩放因子。", "default": "2", "constraint": "Sy != 0"},
+                {"name": "Px", "role": "input_control", "type": "point.x", "description": "变换中心的 x 坐标。", "default": "0"},
+                {"name": "Py", "role": "input_control", "type": "point.y", "description": "变换中心的 y 坐标。", "default": "0"},
+                {"name": "HomMat2DScale", "role": "output_control", "type": "hom_mat2d", "description": "叠加缩放后的二维变换矩阵。"}
+            ]
+        },
+        "HomMat2dTranslate": {
+            "name": "hom_mat2d_translate",
+            "parameters": [
+                {"name": "HomMat2D", "role": "input_control", "type": "hom_mat2d", "description": "输入的二维齐次变换矩阵。"},
+                {"name": "Tx", "role": "input_control", "type": "point.x", "description": "沿 x 轴的平移量。", "default": "64"},
+                {"name": "Ty", "role": "input_control", "type": "point.y", "description": "沿 y 轴的平移量。", "default": "64"},
+                {"name": "HomMat2DTranslate", "role": "output_control", "type": "hom_mat2d", "description": "叠加平移后的二维变换矩阵。"}
+            ]
+        },
+        "HysteresisThreshold": {
+            "name": "hysteresis_threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "RegionHysteresis", "role": "output_object", "type": "region", "description": "保留强响应和与其相连的弱响应后得到的区域。"},
+                {"name": "Low", "role": "input_control", "type": "number", "description": "滞后判断的低阈值，用来保留与强响应相连的弱响应。", "default": "30"},
+                {"name": "High", "role": "input_control", "type": "number", "description": "滞后判断的高阈值，用来确定强响应。", "default": "60", "constraint": "High >= Low"},
+                {"name": "MaxLength", "role": "input_control", "type": "integer", "description": "弱响应像素连接到强响应像素时允许的最大路径长度。", "default": "10"}
+            ]
+        },
+        "Illuminate": {
+            "name": "illuminate",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageIlluminate", "role": "output_object", "type": "image", "description": "光照校正后得到的图像。"},
+                {"name": "MaskWidth", "role": "input_control", "type": "extent.x", "description": "局部运算窗口的宽度（像素）。", "default": "101", "constraint": "MaskWidth < width(Image) * 2"},
+                {"name": "MaskHeight", "role": "input_control", "type": "extent.y", "description": "局部运算窗口的高度（像素）。", "default": "101", "constraint": "MaskHeight < height(Image) * 2"},
+                {"name": "Factor", "role": "input_control", "type": "real", "description": "光照校正强度。", "default": "0.7"}
+            ]
+        },
+        "InnerCircle": {
+            "name": "inner_circle",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Row", "role": "output_control", "type": "circle.center.y", "description": "最大内接圆圆心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "circle.center.x", "description": "最大内接圆圆心的列坐标。"},
+                {"name": "Radius", "role": "output_control", "type": "circle.radius", "description": "最大内接圆的半径（像素）。", "constraint": "Radius >= 0"}
+            ]
+        },
+        "InnerRectangle1": {
+            "name": "inner_rectangle1",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Row1", "role": "output_control", "type": "rectangle.origin.y", "description": "左上角的行坐标。"},
+                {"name": "Column1", "role": "output_control", "type": "rectangle.origin.x", "description": "左上角的列坐标。"},
+                {"name": "Row2", "role": "output_control", "type": "rectangle.corner.y", "description": "右下角的行坐标。"},
+                {"name": "Column2", "role": "output_control", "type": "rectangle.corner.x", "description": "右下角的列坐标。"}
+            ]
+        },
+        "Intensity": {
+            "name": "intensity",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Mean", "role": "output_control", "type": "real", "description": "每个区域内像素的平均灰度值。"},
+                {"name": "Deviation", "role": "output_control", "type": "real", "description": "各区域内像素灰度值的标准差。"}
+            ]
+        },
+        "LengthXld": {
+            "name": "length_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Length", "role": "output_control", "type": "real", "description": "每条 XLD 轮廓的长度（像素）。", "constraint": "Length >= 0"}
+            ]
+        },
+        "LinesGauss": {
+            "name": "lines_gauss",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Lines", "role": "output_object", "type": "xld_cont", "description": "检测得到的线条 XLD 轮廓。"},
+                {"name": "Sigma", "role": "input_control", "type": "number", "description": "高斯平滑的标准差，数值越大平滑越强。", "default": "1.5"},
+                {"name": "Low", "role": "input_control", "type": "number", "description": "滞后判断的低阈值，用来保留与强响应相连的弱响应。", "default": "3"},
+                {"name": "High", "role": "input_control", "type": "number", "description": "滞后判断的高阈值，用来确定强响应。", "default": "8", "constraint": "High >= Low"},
+                {"name": "LightDark", "role": "input_control", "type": "string", "description": "要提取亮目标还是暗目标，具体选项取决于算子。", "default": "\"light\""},
+                {"name": "ExtractWidth", "role": "input_control", "type": "string", "description": "是否估计线宽并将其作为轮廓属性输出。", "default": "\"true\""},
+                {"name": "LineModel", "role": "input_control", "type": "string", "description": "估计或校正线条位置时使用的线条截面模型。", "default": "\"bar-shaped\""},
+                {"name": "CompleteJunctions", "role": "input_control", "type": "string", "description": "是否补齐未能直接提取的线条交点。", "default": "\"true\""}
+            ]
+        },
+        "LocalThreshold": {
+            "name": "local_threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Region", "role": "output_object", "type": "region", "description": "按局部统计阈值提取的像素区域。"},
+                {"name": "Method", "role": "input_control", "type": "string", "description": "用于计算阈值的分割方法。", "default": "\"adapted_std_deviation\""},
+                {"name": "LightDark", "role": "input_control", "type": "string", "description": "要提取亮目标还是暗目标，具体选项取决于算子。", "default": "\"dark\""},
+                {"name": "GenParamName", "role": "input_control", "type": "attribute.name", "description": "局部阈值算法可选参数的名称列表。", "default": "\"[]\""},
+                {"name": "GenParamValue", "role": "input_control", "type": "attribute.value", "description": "与可选参数名称一一对应的值列表。", "default": "\"[]\""}
+            ]
+        },
+        "MeanImage": {
+            "name": "mean_image",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageMean", "role": "output_object", "type": "image", "description": "均值滤波后的图像。"},
+                {"name": "MaskWidth", "role": "input_control", "type": "extent.x", "description": "局部运算窗口的宽度（像素）。", "default": "9", "constraint": "odd(MaskWidth) && MaskWidth < width(Image) * 2"},
+                {"name": "MaskHeight", "role": "input_control", "type": "extent.y", "description": "局部运算窗口的高度（像素）。", "default": "9", "constraint": "odd(MaskHeight) && MaskHeight < height(Image) * 2"}
+            ]
+        },
+        "MedianImage": {
+            "name": "median_image",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageMedian", "role": "output_object", "type": "image", "description": "中值滤波后的图像。"},
+                {"name": "MaskType", "role": "input_control", "type": "string", "description": "中值滤波窗口的形状。", "default": "\"circle\""},
+                {"name": "Radius", "role": "input_control", "type": "integer", "description": "中值滤波掩模的半径（像素）。", "default": "1"},
+                {"name": "Margin", "role": "input_control", "type": "string", "description": "滤波窗口超出图像边界时的处理策略。", "default": "\"mirrored\""}
+            ]
+        },
+        "MinMaxGray": {
+            "name": "min_max_gray",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Percent", "role": "input_control", "type": "number", "description": "统计最小值和最大值前，在灰度分布两端各排除的像素百分比。", "default": "0", "constraint": "0 <= Percent && Percent <= 50"},
+                {"name": "Min", "role": "output_control", "type": "real", "description": "输出的最小灰度值。"},
+                {"name": "Max", "role": "output_control", "type": "real", "description": "输出的最大灰度值。", "constraint": "Max >= Min"},
+                {"name": "Range", "role": "output_control", "type": "real", "description": "最小值与最大值之间的灰度跨度。", "constraint": "Range >= 0"}
+            ]
+        },
+        "OpeningCircle": {
+            "name": "opening_circle",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionOpening", "role": "output_object", "type": "region", "description": "开运算后的区域。"},
+                {"name": "Radius", "role": "input_control", "type": "real", "description": "圆或圆形结构元素的半径（像素）。", "default": "3.5"}
+            ]
+        },
+        "OpeningRectangle1": {
+            "name": "opening_rectangle1",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionOpening", "role": "output_object", "type": "region", "description": "开运算后的区域。"},
+                {"name": "Width", "role": "input_control", "type": "extent.x", "description": "矩形结构元素的宽度（像素）。", "default": "10"},
+                {"name": "Height", "role": "input_control", "type": "extent.y", "description": "矩形结构元素的高度（像素）。", "default": "10"}
+            ]
+        },
+        "OrientationXld": {
+            "name": "orientation_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Phi", "role": "output_control", "type": "angle.rad", "description": "轮廓主方向角（弧度）。", "constraint": "- pi < Phi && Phi <= pi"}
+            ]
+        },
+        "ProjectionPl": {
+            "name": "projection_pl",
+            "parameters": [
+                {"name": "Row", "role": "input_control", "type": "point.y", "description": "行坐标（沿图像纵向）。"},
+                {"name": "Column", "role": "input_control", "type": "point.x", "description": "列坐标（沿图像横向）。"},
+                {"name": "Row1", "role": "input_control", "type": "point.y", "description": "第一个点的行坐标。"},
+                {"name": "Column1", "role": "input_control", "type": "point.x", "description": "第一个点的列坐标。"},
+                {"name": "Row2", "role": "input_control", "type": "point.y", "description": "第二个点的行坐标。"},
+                {"name": "Column2", "role": "input_control", "type": "point.x", "description": "第二个点的列坐标。"},
+                {"name": "RowProj", "role": "output_control", "type": "real", "description": "垂足的行坐标。"},
+                {"name": "ColProj", "role": "output_control", "type": "real", "description": "垂足的列坐标。"}
+            ]
+        },
+        "ReadImage": {
+            "name": "read_image",
+            "parameters": [
+                {"name": "Image", "role": "output_object", "type": "image", "description": "从文件解码得到的图像对象。"},
+                {"name": "FileName", "role": "input_control", "type": "filename.read", "description": "要读取或写入的文件名或路径。", "default": "\"printer_chip/printer_chip_01\""}
+            ]
+        },
+        "ReadShapeModel": {
+            "name": "read_shape_model",
+            "parameters": [
+                {"name": "FileName", "role": "input_control", "type": "filename.read", "description": "要读取或写入的文件名或路径。"},
+                {"name": "ModelID", "role": "output_control", "type": "shape_model", "description": "生成或读取的形状模板句柄。"}
+            ]
+        },
+        "ReduceDomain": {
+            "name": "reduce_domain",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Region", "role": "input_object", "type": "region", "description": "限制图像处理域的 ROI 区域。"},
+                {"name": "ImageReduced", "role": "output_object", "type": "image", "description": "有效处理域与指定区域求交后的图像，像素数据保持原尺寸。"}
+            ]
+        },
+        "RegionFeatures": {
+            "name": "region_features",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Features", "role": "input_control", "type": "string", "description": "待测量或用于筛选的区域特征名称。", "default": "\"area\""},
+                {"name": "Value", "role": "output_control", "type": "real", "description": "各区域的指定特征测量值。"}
+            ]
+        },
+        "Rgb1ToGray": {
+            "name": "rgb1_to_gray",
+            "parameters": [
+                {"name": "RGBImage", "role": "input_object", "type": "image", "description": "待转换的 RGB 图像。"},
+                {"name": "GrayImage", "role": "output_object", "type": "image", "description": "按 RGB 通道加权得到的灰度图像。"}
+            ]
+        },
+        "ScaleImage": {
+            "name": "scale_image",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "ImageScaled", "role": "output_object", "type": "image", "description": "对灰度值进行乘加变换后的图像。"},
+                {"name": "Mult", "role": "input_control", "type": "number", "description": "应用到每个像素灰度值的乘数。", "default": "0.01"},
+                {"name": "Add", "role": "input_control", "type": "number", "description": "灰度值乘以 Mult 后加上的偏移量。", "default": "0"}
+            ]
+        },
+        "SegmentContourAttribXld": {
+            "name": "segment_contour_attrib_xld",
+            "parameters": [
+                {"name": "Contour", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓。"},
+                {"name": "ContourPart", "role": "output_object", "type": "xld_cont", "description": "按指定条件切分后得到的 XLD 轮廓片段。"},
+                {"name": "Attribute", "role": "input_control", "type": "string", "description": "用于切分轮廓的 XLD 点属性。", "default": "\"distance\""},
+                {"name": "Operation", "role": "input_control", "type": "string", "description": "多个点属性筛选条件的组合方式。", "default": "\"and\""},
+                {"name": "Min", "role": "input_control", "type": "real", "description": "接受的特征值下限。", "default": "150"},
+                {"name": "Max", "role": "input_control", "type": "real", "description": "接受的特征值上限。", "default": "99999", "constraint": "Max >= Min"}
+            ]
+        },
+        "SegmentContoursXld": {
+            "name": "segment_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "ContoursSplit", "role": "output_object", "type": "xld_cont", "description": "切分后得到的直线或曲线轮廓片段。"},
+                {"name": "Mode", "role": "input_control", "type": "string", "description": "决定输出直线段、圆弧或椭圆弧的分割模式。", "default": "\"lines_circles\""},
+                {"name": "SmoothCont", "role": "input_control", "type": "integer", "description": "轮廓分段前用于平滑的相邻点数，0 表示关闭平滑。", "default": "5", "constraint": "SmoothCont == 0 || SmoothCont >= 3 && odd(SmoothCont)"},
+                {"name": "MaxLineDist1", "role": "input_control", "type": "real", "description": "第一次直线近似时允许的最大偏差（像素）。", "default": "4", "constraint": "MaxLineDist1 >= 0.0"},
+                {"name": "MaxLineDist2", "role": "input_control", "type": "real", "description": "第二次直线近似时允许的最大偏差（像素）。", "default": "2", "constraint": "MaxLineDist2 >= 0.0"}
+            ]
+        },
+        "SelectContoursXld": {
+            "name": "select_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "SelectedContours", "role": "output_object", "type": "xld_cont", "description": "符合筛选条件的 XLD 轮廓。"},
+                {"name": "Feature", "role": "input_control", "type": "string", "description": "用于筛选轮廓的几何特征。", "default": "\"contour_length\""},
+                {"name": "Min1", "role": "input_control", "type": "real", "description": "第一项筛选条件的下限。", "default": "0.5"},
+                {"name": "Max1", "role": "input_control", "type": "real", "description": "第一项筛选条件的上限。", "default": "200"},
+                {"name": "Min2", "role": "input_control", "type": "real", "description": "第二项筛选条件的下限。", "default": "-0.5"},
+                {"name": "Max2", "role": "input_control", "type": "real", "description": "第二项筛选条件的上限。", "default": "0.5"}
+            ]
+        },
+        "SelectShape": {
+            "name": "select_shape",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "SelectedRegions", "role": "output_object", "type": "region", "description": "符合指定特征范围的区域。"},
+                {"name": "Features", "role": "input_control", "type": "string", "description": "待测量或用于筛选的区域特征名称。", "default": "\"area\""},
+                {"name": "Operation", "role": "input_control", "type": "string", "description": "多个特征或属性判断结果的组合方式。", "default": "\"and\""},
+                {"name": "Min", "role": "input_control", "type": "real", "description": "接受的特征值下限。", "default": "150"},
+                {"name": "Max", "role": "input_control", "type": "real", "description": "接受的特征值上限。", "default": "99999", "constraint": "Max >= Min"}
+            ]
+        },
+        "SetShapeModelOrigin": {
+            "name": "set_shape_model_origin",
+            "parameters": [
+                {"name": "ModelID", "role": "input_control", "type": "shape_model", "description": "已创建或读取的形状模板句柄。"},
+                {"name": "Row", "role": "input_control", "type": "point.y", "description": "新模板原点相对默认原点的行偏移（像素）。"},
+                {"name": "Column", "role": "input_control", "type": "point.x", "description": "新模板原点相对默认原点的列偏移（像素）。"}
+            ]
+        },
+        "ShapeTrans": {
+            "name": "shape_trans",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionTrans", "role": "output_object", "type": "region", "description": "按指定几何形状变换后的区域。"},
+                {"name": "Type", "role": "input_control", "type": "string", "description": "区域几何变换类型，例如取凸包或外接矩形。", "default": "\"convex\""}
+            ]
+        },
+        "Skeleton": {
+            "name": "skeleton",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "Skeleton", "role": "output_object", "type": "region", "description": "细化后得到的骨架区域。"}
+            ]
+        },
+        "SmallestCircle": {
+            "name": "smallest_circle",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Row", "role": "output_control", "type": "circle.center.y", "description": "最小外接圆圆心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "circle.center.x", "description": "最小外接圆圆心的列坐标。"},
+                {"name": "Radius", "role": "output_control", "type": "circle.radius", "description": "求得的圆半径（像素）。", "constraint": "Radius >= 0"}
+            ]
+        },
+        "SmallestCircleXld": {
+            "name": "smallest_circle_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Row", "role": "output_control", "type": "circle.center.y", "description": "最小外接圆圆心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "circle.center.x", "description": "最小外接圆圆心的列坐标。"},
+                {"name": "Radius", "role": "output_control", "type": "circle.radius", "description": "求得的圆半径（像素）。", "constraint": "Radius >= 0"}
+            ]
+        },
+        "SmallestRectangle1": {
+            "name": "smallest_rectangle1",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Row1", "role": "output_control", "type": "rectangle.origin.y", "description": "左上角的行坐标。"},
+                {"name": "Column1", "role": "output_control", "type": "rectangle.origin.x", "description": "左上角的列坐标。"},
+                {"name": "Row2", "role": "output_control", "type": "rectangle.corner.y", "description": "右下角的行坐标。"},
+                {"name": "Column2", "role": "output_control", "type": "rectangle.corner.x", "description": "右下角的列坐标。"}
+            ]
+        },
+        "SmallestRectangle2": {
+            "name": "smallest_rectangle2",
+            "parameters": [
+                {"name": "Regions", "role": "input_object", "type": "region", "description": "参与运算的一个或多个区域。"},
+                {"name": "Row", "role": "output_control", "type": "rectangle2.center.y", "description": "最小有向外接矩形中心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "rectangle2.center.x", "description": "最小有向外接矩形中心的列坐标。"},
+                {"name": "Phi", "role": "output_control", "type": "rectangle2.angle.rad", "description": "计算得到的方向角（弧度）。", "constraint": "- pi / 2 < Phi && Phi <= pi / 2"},
+                {"name": "Length1", "role": "output_control", "type": "rectangle2.hwidth", "description": "外接矩形第一条轴的半边长（像素）。", "constraint": "Length1 >= 0.0"},
+                {"name": "Length2", "role": "output_control", "type": "rectangle2.hheight", "description": "外接矩形第二条轴的半边长（像素）。", "constraint": "Length2 >= 0.0 && Length2 <= Length1"}
+            ]
+        },
+        "SmallestRectangle2Xld": {
+            "name": "smallest_rectangle2_xld",
+            "parameters": [
+                {"name": "XLD", "role": "input_object", "type": "xld", "description": "参与计算的 XLD 轮廓或多边形。"},
+                {"name": "Row", "role": "output_control", "type": "rectangle2.center.y", "description": "最小有向外接矩形中心的行坐标。"},
+                {"name": "Column", "role": "output_control", "type": "rectangle2.center.x", "description": "最小有向外接矩形中心的列坐标。"},
+                {"name": "Phi", "role": "output_control", "type": "rectangle2.angle.rad", "description": "计算得到的方向角（弧度）。", "constraint": "- pi / 2 < Phi && Phi <= pi / 2"},
+                {"name": "Length1", "role": "output_control", "type": "rectangle2.hwidth", "description": "外接矩形第一条轴的半边长（像素）。", "constraint": "Length1 >= 0.0"},
+                {"name": "Length2", "role": "output_control", "type": "rectangle2.hheight", "description": "外接矩形第二条轴的半边长（像素）。", "constraint": "Length2 >= 0.0 && Length2 <= Length1"}
+            ]
+        },
+        "SmoothContoursXld": {
+            "name": "smooth_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "SmoothedContours", "role": "output_object", "type": "xld_cont", "description": "平滑后的 XLD 轮廓。"},
+                {"name": "NumRegrPoints", "role": "input_control", "type": "integer", "description": "计算局部回归直线使用的轮廓点数。", "default": "5", "constraint": "NumRegrPoints >= 3 && odd(NumRegrPoints)"}
+            ]
+        },
+        "SobelAmp": {
+            "name": "sobel_amp",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "EdgeAmplitude", "role": "output_object", "type": "image", "description": "Sobel 算法得到的边缘幅值图像。"},
+                {"name": "FilterType", "role": "input_control", "type": "string", "description": "Sobel 边缘响应的计算方式。", "default": "\"sum_abs\""},
+                {"name": "Size", "role": "input_control", "type": "integer", "description": "Sobel 滤波掩模的尺寸。", "default": "3"}
+            ]
+        },
+        "SortContoursXld": {
+            "name": "sort_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "SortedContours", "role": "output_object", "type": "xld_cont", "description": "按指定顺序排列的 XLD 轮廓。"},
+                {"name": "SortMode", "role": "input_control", "type": "string", "description": "决定各轮廓代表位置及排序基准的方式。", "default": "\"upper_left\""},
+                {"name": "Order", "role": "input_control", "type": "string", "description": "升序或降序。", "default": "\"true\""},
+                {"name": "RowOrCol", "role": "input_control", "type": "string", "description": "优先按行还是按列进行排序。", "default": "\"row\""}
+            ]
+        },
+        "Threshold": {
+            "name": "threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Region", "role": "output_object", "type": "region", "description": "包含灰度值落在指定区间内的所有像素。"},
+                {"name": "MinGray", "role": "input_control", "type": "number", "description": "灰度下限（含端点），使用 min 时不限制下限。", "default": "128"},
+                {"name": "MaxGray", "role": "input_control", "type": "number", "description": "灰度上限（含端点），使用 max 时不限制上限。", "default": "255", "constraint": "MaxGray >= MinGray"}
+            ]
+        },
+        "TopHat": {
+            "name": "top_hat",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "StructElement", "role": "input_object", "type": "region", "description": "执行形态学运算时使用的结构元素区域。"},
+                {"name": "RegionTopHat", "role": "output_object", "type": "region", "description": "顶帽变换后的区域。"}
+            ]
+        },
+        "TupleSum": {
+            "name": "tuple_sum",
+            "parameters": [
+                {"name": "Tuple", "role": "input_control", "type": "tuple", "description": "待求和的数值元组。"},
+                {"name": "Sum", "role": "output_control", "type": "tuple", "description": "数值元组中所有元素的和。"}
+            ]
+        },
+        "Union1": {
+            "name": "union1",
+            "parameters": [
+                {"name": "Region", "role": "input_object", "type": "region", "description": "参与运算的输入区域。"},
+                {"name": "RegionUnion", "role": "output_object", "type": "region", "description": "输入区域集合的并集。"}
+            ]
+        },
+        "UnionAdjacentContoursXld": {
+            "name": "union_adjacent_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "UnionContours", "role": "output_object", "type": "xld_cont", "description": "按条件联合后的 XLD 轮廓。"},
+                {"name": "MaxDistAbs", "role": "input_control", "type": "real", "description": "允许联合的轮廓之间的最大绝对间隔（像素）。", "default": "10"},
+                {"name": "MaxDistRel", "role": "input_control", "type": "real", "description": "端点距离相对于较长轮廓长度的最大允许比例。", "default": "1"},
+                {"name": "Mode", "role": "input_control", "type": "string", "description": "联合时是否保留输入轮廓的点属性。", "default": "\"attr_keep\""}
+            ]
+        },
+        "UnionCocircularContoursXld": {
+            "name": "union_cocircular_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "UnionContours", "role": "output_object", "type": "xld_cont", "description": "按条件联合后的 XLD 轮廓。"},
+                {"name": "MaxArcAngleDiff", "role": "input_control", "type": "angle.rad", "description": "允许共圆合并的两个弧段之间的最大角间距（弧度）。", "default": "0.5"},
+                {"name": "MaxArcOverlap", "role": "input_control", "type": "angle.rad", "description": "允许两个弧段重叠的最大角度（弧度）。", "default": "0.1"},
+                {"name": "MaxTangentAngle", "role": "input_control", "type": "angle.rad", "description": "允许合并的端点切线最大夹角（弧度）。", "default": "0.2"},
+                {"name": "MaxDist", "role": "input_control", "type": "number", "description": "允许合并的弧段端点间最大距离（像素）。", "default": "30"},
+                {"name": "MaxRadiusDiff", "role": "input_control", "type": "number", "description": "两个弧段拟合圆允许的最大半径差（像素）。", "default": "10"},
+                {"name": "MaxCenterDist", "role": "input_control", "type": "number", "description": "两个弧段拟合圆允许的最大圆心距离（像素）。", "default": "10"},
+                {"name": "MergeSmallContours", "role": "input_control", "type": "string", "description": "是否同时合并无法独立拟合圆的小轮廓。", "default": "\"true\""},
+                {"name": "Iterations", "role": "input_control", "type": "integer", "description": "算法执行迭代的次数或上限。", "default": "1"}
+            ]
+        },
+        "UnionCollinearContoursXld": {
+            "name": "union_collinear_contours_xld",
+            "parameters": [
+                {"name": "Contours", "role": "input_object", "type": "xld_cont", "description": "待处理的 XLD 轮廓集合。"},
+                {"name": "UnionContours", "role": "output_object", "type": "xld_cont", "description": "按条件联合后的 XLD 轮廓。"},
+                {"name": "MaxDistAbs", "role": "input_control", "type": "real", "description": "允许联合的轮廓之间的最大绝对间隔（像素）。", "default": "10"},
+                {"name": "MaxDistRel", "role": "input_control", "type": "real", "description": "沿参考轮廓回归线测得的间隔相对于该轮廓长度的上限。", "default": "1"},
+                {"name": "MaxShift", "role": "input_control", "type": "real", "description": "候选轮廓相对参考轮廓回归直线的最大偏移（像素）。", "default": "2"},
+                {"name": "MaxAngle", "role": "input_control", "type": "real", "description": "允许合并的轮廓回归直线之间的最大夹角（弧度）。", "default": "0.1"},
+                {"name": "Mode", "role": "input_control", "type": "string", "description": "联合时是否保留输入轮廓的点属性。", "default": "\"attr_keep\""}
+            ]
+        },
+        "VarThreshold": {
+            "name": "var_threshold",
+            "parameters": [
+                {"name": "Image", "role": "input_object", "type": "image", "description": "参与运算的输入图像。"},
+                {"name": "Region", "role": "output_object", "type": "region", "description": "对比局部均值和标准差后提取的像素区域。"},
+                {"name": "MaskWidth", "role": "input_control", "type": "extent.x", "description": "局部运算窗口的宽度（像素）。", "default": "15", "constraint": "MaskWidth >= 1"},
+                {"name": "MaskHeight", "role": "input_control", "type": "extent.y", "description": "局部运算窗口的高度（像素）。", "default": "15", "constraint": "MaskHeight >= 1"},
+                {"name": "StdDevScale", "role": "input_control", "type": "number", "description": "局部灰度标准差的缩放系数。", "default": "0.2"},
+                {"name": "AbsThreshold", "role": "input_control", "type": "number", "description": "像素与局部均值之间所需的最小绝对灰度差。", "default": "2"},
+                {"name": "LightDark", "role": "input_control", "type": "string", "description": "要提取亮目标还是暗目标，具体选项取决于算子。", "default": "\"dark\""}
+            ]
+        },
+        "VectorAngleToRigid": {
+            "name": "vector_angle_to_rigid",
+            "parameters": [
+                {"name": "Row1", "role": "input_control", "type": "point.y", "description": "起始姿态参考点的行坐标。"},
+                {"name": "Column1", "role": "input_control", "type": "point.x", "description": "起始姿态参考点的列坐标。"},
+                {"name": "Angle1", "role": "input_control", "type": "angle.rad", "description": "起始姿态的方向角（弧度）。"},
+                {"name": "Row2", "role": "input_control", "type": "point.y", "description": "目标姿态参考点的行坐标。"},
+                {"name": "Column2", "role": "input_control", "type": "point.x", "description": "目标姿态参考点的列坐标。"},
+                {"name": "Angle2", "role": "input_control", "type": "angle.rad", "description": "目标姿态的方向角（弧度）。"},
+                {"name": "HomMat2D", "role": "output_control", "type": "hom_mat2d", "description": "计算得到的二维齐次变换矩阵。"}
+            ]
+        },
+        "WriteShapeModel": {
+            "name": "write_shape_model",
+            "parameters": [
+                {"name": "ModelID", "role": "input_control", "type": "shape_model", "description": "已创建或读取的形状模板句柄。"},
+                {"name": "FileName", "role": "input_control", "type": "filename.write", "description": "要读取或写入的文件名或路径。"}
+            ]
+        }
+    }
+}

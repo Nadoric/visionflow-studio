@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+    <defs>
+        <linearGradient id="tile" x2="0%" y2="100%">
+            <stop stop-color="#1A3E6F"/>
+            <stop offset="1" stop-color="#070F2A"/>
+        </linearGradient>
+        <linearGradient id="optic" x2="0%" y2="100%">
+            <stop stop-color="#D6FBFF"/>
+            <stop offset="1" stop-color="#22A1FD"/>
+        </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="7"/>
+        </filter>
+    </defs>
+    <rect x="9" y="9" width="238" height="238" rx="58" fill="url(#tile)"/>
+    <rect x="12" y="12" width="232" height="232" rx="56" fill="none" stroke="#507AB8"/>
+    <path d="M38 104V53L56 35H83 M218 152V204L201 221H170 M41 154V190L71 220H101"
+          fill="none" stroke="#376291" stroke-width="2"/>
+    <path d="M83 35h.1 M170 221h.1 M101 220h.1" stroke="#72BFEF" stroke-width="6" stroke-linecap="round"/>
+    <path d="M54 66H85L125 150H131L170 66H204L145 184L128 200L111 184Z"
+          fill="#1E95FF" filter="url(#glow)" opacity=".34"/>
+    <path d="M54 66H85L125 150H131L170 66H204L145 184L128 200L111 184Z" fill="url(#optic)"/>
+    <path d="M128 160L147 148L183 66H204L145 184L128 200Z" fill="#4FF0DC"/>
+    <path d="M57 68H83L123 151" fill="none" stroke="#ECFFFF" stroke-width="1.75"/>
+    <path d="M128 57L145 75L128 93L111 75Z" fill="#8A67FF"/>
+    <path d="M128 62L139 75L128 88L117 75Z" fill="#F1EEFF"/>
+</svg>
